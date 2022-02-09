@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gauge | CSS Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gauge">
+        <div class="progress">
+            <div class="bar"></div>
+            <div class="needle"></div>
+        </div>
+    </div>
+    <div class="msg">
+        <p class="process">Verification process</p>
+        <p class="success">Successfully done!</p>
+    </div>
+
+    <script>
+
+        const process_txt = document.querySelector('.process');
+        const success_txt = document.querySelector('.success');
+
+        setTimeout(() => {
+            process_txt.classList.add('active');
+        }, 0)
+
+        setTimeout(toggleMsg, 1600);
+
+        function toggleMsg() {
+            process_txt.classList.remove('active');
+            success_txt.classList.add('active');
+        }
+
+    </script>
+</body>
+
+</html>
