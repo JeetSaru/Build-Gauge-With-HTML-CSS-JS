@@ -22,12 +22,14 @@ You can do whatever you want with the code. However if you love my content, you 
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--gray);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    overflow: hidden;
 }
 
 .gauge {
